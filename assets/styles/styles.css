@@ -1,0 +1,88 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  overflow-x: hidden;
+}
+
+.navbar-custom {
+  background: rgb(30, 62, 139);
+  background: linear-gradient(
+    90deg,
+    rgba(30, 62, 139, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(48, 9, 62, 1) 100%
+  );
+  color: white;
+}
+ul {
+  list-style: none !important;
+}
+
+form .btn {
+  background-color: #5391ed !important;
+  border-color: #5391ed !important;
+}
+
+hr {
+  height: 2px !important;
+  border-top: 2px solid !important;
+}
+
+#list-SearchHistory button {
+  color: black;
+  background-color: #6c757d7d !important;
+  border-color: #6c757d !important;
+}
+
+.col-custom {
+  flex: 0 0 auto;
+  width: 20%;
+}
+
+.card {
+  background-color: #233e5ae3;
+}
+
+.uv {
+  padding-top: 0.25rem !important;
+  padding-bottom: 0.25rem !important;
+  padding-right: 1rem !important;
+  padding-left: 1rem !important;
+}
+/* UV Index Conditions */
+.uv-favorable {
+  --bs-bg-opacity: 1;
+  background-color: rgba(
+    var(--bs-success-rgb),
+    var(--bs-bg-opacity)
+  ) !important;
+}
+
+.uv-moderate {
+  --bs-bg-opacity: 1;
+  background-color: rgb(250, 250, 18) !important;
+  color: black !important;
+}
+
+.uv-severe {
+  --bs-bg-opacity: 1;
+  background-color: rgb(241, 160, 9) !important;
+}
+
+.uv-xsevere {
+  --bs-bg-opacity: 1;
+  background-color: rgb(221, 0, 0) !important;
+}

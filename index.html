@@ -21,7 +21,169 @@
 
     <title>Weather Dashboard</title>
   </head>
-  <body>
+  <body class="pt-5">
+    <header>
+      <nav class="navbar navbar-custom fixed-top justify-content-center mb-5">
+        <h1 class="text-center"><b>Weather Dashboard</b></h1>
+      </nav>
+    </header>
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col-custom ms-2">
+              <p class="h3"><b>Search for a City:</b/p>
+                <form>
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="searchForCityInput">
+                  </div>
+                  <div class="d-grid gap-2 mt-3">
+                    <button id="searchButton" class="btn btn-primary" type="button">Search</button>
+                  </div>
+                </form>
+                <hr/>
+                <ul id="list-SearchHistory" class="list-group mt-4">
+                  <li class="searches mb-3">
+                    <div class="d-grid gap-2">
+                      <button class="btn btn-secondary" type="button">Austin</button>
+                    </div>
+                  </li>
+                  <li class="searches mb-3">
+                    <div class="d-grid gap-2">
+                      <button class="btn btn-secondary" type="button">Chicago</button>
+                    </div>
+                  </li>
+                  <li class="searches mb-3">
+                    <div class="d-grid gap-2">
+                      <button class="btn btn-secondary" type="button">New York</button>
+                    </div>
+                  </li>
+                  <li class="searches mb-3">
+                    <div class="d-grid gap-2">
+                      <button class="btn btn-secondary" type="button">Orlando</button>
+                    </div>
+                  </li>
+                  <li class="searches mb-3">
+                    <div class="d-grid gap-2">
+                      <button class="btn btn-secondary" type="button">San Francisco</button>
+                    </div>
+                  </li>
+                  <li class="searches mb-3">
+                    <div class="d-grid gap-2">
+                      <button class="btn btn-secondary" type="button">Seattle</button>
+                    </div>
+                  </li>
+                  <li class="searches mb-3">
+                    <div class="d-grid gap-2">
+                      <button class="btn btn-secondary" type="button">Denver</button>
+                    </div>
+                  </li>
+                  <li class="searches mb-3">
+                    <div class="d-grid gap-2">
+                      <button class="btn btn-secondary" type="button">Atlanta</button>
+                    </div>
+                  </li>                    
+                </ul>
+                </div>
+                <div class="col-9">
+                  <div class="container-fluid">
+                    <div class="row border border-secondary pt-3">
+                      <p id="city-header" class="h2"><b> <span>Atlanta</span> (3/30/2021) 
+                        <i class="bx bx-cloud"></i>  
+                      </b></p>
+                      <p id="temp" class="my-3">Temp: 
+                        <span>74.01&deg;F</span>
+                      </p>
+                      <p id ="wind" class="my-3">Wind: 
+                        <span>6.67 MPH</span>
+                      </p>
+                      <p id="Humidity" class="my-3">Humidity: 
+                        <span>46 %</span>
+                      </p>
+                      <p id="uv-index"class="my-3">UV Index: 
+                        <span class="uv-favorable uv text-white rounded" >0.47</span>
+                      </p>
+                    </div>
+                    <!-- <div class="row border border-secondary pt-3">
+                      <p id="city-header" class="h3">
+                      </p>
+                      <p id="temp" class="my-3">Temp: 
+                        <span></span>
+                      </p>
+                      <p id ="wind" class="my-3">Wind: 
+                        <span></span>
+                      </p>
+                      <p id="humidity" class="my-3">Humidity: 
+                        <span></span>
+                      </p>
+                      <p id="uv-index"class="my-3">UV Index: 
+                        <span></span>
+                      </p>
+                    </div> -->
+                    <div class="row pt-3">
+                      <div class="container">
+                        <p class="h3"><b>5-Day Forecast:</b/p>
+                          <div id="forecasts" class="row">
+                            <div class="col-custom">
+                              <div class="card text-white ">
+                                <div class="card-body">
+                                  <p class="card-title h5"><b>3/31/2021</b></p>
+                                  <img class=" img-fluid card-body text-center" src="https://openweathermap.org/img/wn/01d@2x.png">
+                                  <p class="card-text mb-4"><b>Temp: 73.72&deg;F</b><p>
+                                  <p class="card-text mb-4"><b>Wind: 9.53 MPH</b></p>
+                                  <p class="card-text mb-4"><b>Humidity: 66 %</b></p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-custom">
+                              <div class="card text-white ">
+                                <div class="card-body">
+                                  <p class="card-title h5"><b>4/1/2021</b></p>
+                                  <i class="bx bx-cloud mb-3"></i>
+                                  <p class="card-text mb-4"><b>Temp: 49.5&deg;F</b><p>
+                                  <p class="card-text mb-4"><b>Wind: 16.24 MPH</b></p>
+                                  <p class="card-text mb-4"><b>Humidity: 30 %</b></p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-custom">
+                              <div class="card text-white ">
+                                <div class="card-body">
+                                  <p class="card-title h5"><b>4/2/2021</b></p>
+                                  <i class="bx bx-cloud mb-3"></i>
+                                  <p class="card-text mb-4"><b>Temp: 53.38&deg;F</b><p>
+                                  <p class="card-text mb-4"><b>Wind: 6.15 MPH</b></p>
+                                  <p class="card-text mb-4"><b>Humidity: 20 %</b></p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-custom">
+                              <div class="card text-white ">
+                                <div class="card-body">
+                                  <p class="card-title h5"><b>4/3/2021</b></p>
+                                  <i class="bx bx-cloud mb-3"></i>
+                                  <p class="card-text mb-4"><b>Temp: 61.43&deg;F</b><p>
+                                  <p class="card-text mb-4"><b>Wind: 4.12 MPH</b></p>
+                                  <p class="card-text mb-4"><b>Humidity: 20 %</b></p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-custom">
+                              <div class="card text-white ">
+                                <div class="card-body">
+                                  <p class="card-title h5"><b>4/4/2021</b></p>
+                                  <i class="bx bx-cloud mb-3"></i>
+                                  <p class="card-text mb-4"><b>Temp: 69.04&deg;F</b><p>
+                                  <p class="card-text mb-4"><b>Wind: 4.27 MPH</b></p>
+                                  <p class="card-text mb-4"><b>Humidity: 24 %</b></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+          </div>
+        </div>
     <script src="./assets/vendor/jquery/jquery-3.6.0.min.js"></script>
     <script src="./assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/vendor/moment/moment-with-locales.min.js"></script>
