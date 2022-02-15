@@ -18,13 +18,13 @@ $(function () {
       getTodaysWeather(city);
       get5DayForecasts(city);
       searchHistory.unshift({ city });
+      displaySearchHistory(city);
       $("#searchForCityInput").val("");
     } else {
       alert("Please enter a City");
     }
 
     saveSearchHistory();
-    displaySearchHistory(city);
   });
 
   //API function to requests todays weather
