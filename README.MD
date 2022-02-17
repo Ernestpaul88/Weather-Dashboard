@@ -28,13 +28,8 @@ WHEN I click on a city in the search history
 THEN I am again presented with current and future conditions for that city
 ```
 
-## Review
+### Link to deployed site
 
-You are required to submit the following for review:
-
-- The URL of the deployed application.
-
-- The URL of the GitHub repository. Give the repository a unique name and include a README describing the project.
 
 ---
 
