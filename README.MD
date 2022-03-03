@@ -4,6 +4,8 @@
 
 A weather dashboard application that runs in the browser and features dynamically updated HTML and CSS. This application uses the OpenWeather One Call API to retrieve weather data for cities.
 
+![Weather Dashboard Preview](./assets/img/06-server-side-apis-homework-demo.jpg)
+
 ## User Story
 
 ```
